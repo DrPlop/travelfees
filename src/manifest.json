@@ -1,0 +1,22 @@
+{
+  "name": "TravelFees",
+  "version": "1.0",
+  "description": "Apply the 3% fees to prices",
+  "manifest_version": 3,
+  "permissions": [],
+  "icons": {
+    "16": "resources/icon-16.png",
+    "32": "resources/icon-32.png",
+    "64": "resources/icon-64.png",
+    "128": "resources/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.travelperk.com/*",
+        "https://app.travelperk.com/*"
+      ],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
